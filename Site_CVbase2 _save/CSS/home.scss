@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+
+  .splashscreen {
+    background-image: url(../RESSOURCES/colorful-palettes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    & div:first-child {
+    }
+    .profil {
+      position: absolute;
+      transform: translateY(-30vh);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .school {
+      position: absolute;
+      transform: translateX(-30vw);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .exp {
+      position: absolute;
+      transform: translateY(30vh);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .contact {
+      position: absolute;
+      transform: translateX(30vw);
+      img {
+        width: 10vw;
+      }
+    }
+  }
+
+  .who {
+        .close-cross {
+          position: absolute;
+          left: 95vw;
+          top: 5vh;
+        }
+
+        article {
+          display: flex;
+          background-color: #00cc99;
+          .image {
+            height: 100vh;
+            background-image: url(../RESSOURCES/Cabane2.jpg);
+            background-size: cover;
+            background-position: bottom;
+            width: 37vw;
+            &_cache {
+              height: 100vh;
+              background-color: black;
+              opacity: 0.2;
+            }
+          }
+          .rubrique {
+            margin-top: 3vh;
+            height: calc(100vh - 3vh);// - margin-top
+            width: 63vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > div {
+              display: flex;
+              align-items: center;
+              margin: 0px 80px;
+              & img {
+                //float: left;
+                margin-right: 75px;
+                border-radius: 50%;
+              }
+              & p {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+  }
+
+  .cv {
+    .close-cross {
+      position: absolute;
+      left: 95vw;
+      top: 5vh;
+    }
+
+    article {
+      display: flex;
+      background-color: #00cc99;
+      .image {
+        height: 100vh;
+        background-image: url(../RESSOURCES/Cabane1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 37vw;
+        &_cache {
+          height: 100vh;
+          background-color: black;
+          opacity: 0.2;
+        }
+      }
+      .rubrique {
+        margin-top: 3vh;
+        height: calc(100vh - 3vh);// - margin-top
+        width: 63vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          margin: 0px 80px 0px 0px;
+          & > div {
+            display: flex;
+            align-items: center;
+            h4 {
+              margin-right: 50px;
+              color: white;
+              max-width: 125px;
+              min-width: 125px;
+            }
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mail_me {
+    .close-cross {
+      position: absolute;
+      left: 95vw;
+      top: 5vh;
+    }
+
+    article {
+      display: flex;
+      background-color: #00cc99;
+      .image {
+        height: 100vh;
+        background-image: url(../RESSOURCES/Cabane1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 37vw;
+        &_cache {
+          height: 100vh;
+          background-color: black;
+          opacity: 0.2;
+        }
+      }
+      .rubrique {
+        margin-top: 3vh;
+        height: calc(100vh - 3vh);// - margin-top
+        width: 63vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & form {
+          display: flex;
+          flex-direction: column;
+          height: 80vh;
+
+          & label {
+            font-size: 1.75rem;
+            line-height: 2;
+          }
+          & textarea {
+            flex-grow: 1;
+          }
+          & .submit_button {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}

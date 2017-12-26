@@ -1,0 +1,432 @@
+@keyframes monanimation {
+  0% {
+    top: 0vh;
+  }
+  100%{
+    top: 100vh;
+  }
+}
+
+@keyframes monanimation2 {
+  0% {
+    //display: none;
+    top: -150vh;
+  }
+  /*30% {
+    top: -100vh;
+    display:block;
+  }*/
+  100%{
+    top: -70vh;
+  }
+}
+
+body {
+  margin: 0;
+
+  .splashscreen {
+    background-image: url(../RESSOURCES/colorful-palettes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    & div:first-child {
+    }
+    .profil {
+      position: absolute;
+      transform: translateY(-30vh);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .school {
+      position: absolute;
+      transform: translateX(-30vw);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .exp {
+      position: absolute;
+      transform: translateY(30vh);
+      img {
+        width: 10vw;
+      }
+    }
+
+    .contact {
+      position: absolute;
+      transform: translateX(30vw);
+      img {
+        width: 10vw;
+      }
+    }
+  }
+
+  .who {
+        .close-cross {
+          position: absolute;
+          left: 95vw;
+          top: 5vh;
+        }
+
+        article {
+          display: flex;
+          background-color: #00cc99;
+          .image {
+            height: 100vh;
+            background-image: url(../RESSOURCES/Cabane2.jpg);
+            background-size: cover;
+            background-position: bottom;
+            width: 37vw;
+            &_cache {
+              height: 100vh;
+              background-color: black;
+              opacity: 0.2;
+            }
+          }
+          .rubrique {
+            margin-top: 3vh;
+            height: calc(100vh - 3vh);// - margin-top
+            width: 63vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & > div {
+              display: flex;
+              align-items: center;
+              margin: 0px 80px;
+              & img {
+                //float: left;
+                margin-right: 75px;
+                border-radius: 50%;
+              }
+              & p {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+  }
+
+  .cv {
+    overflow: hidden;
+    & .slick-prev:before, .slick-next:before {
+    color:red !important;
+    }
+    & .slick-prev, .slick-next {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+      position: relative;
+      z-index: 1;
+      top: 0;
+      transform: translateX(0px) rotate(90deg);
+      left: 50%;
+    }
+    & .slick-arrow
+    {
+      color: red;
+    }
+    .close-cross {
+      position: absolute;
+      left: 95vw;
+      top: 5vh;
+    }
+
+    & > article {
+      display: flex;
+      background-color: #00cc99;
+      .image {
+        height: 100vh;
+        background-image: url(../RESSOURCES/Cabane1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 37vw;
+        &_cache {
+          height: 100vh;
+          background-color: black;
+          opacity: 0.2;
+        }
+      }
+      .rubrique {
+        margin-top: 3vh;
+        height: calc(100vh - 3vh);// - margin-top
+        width: 63vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div
+          {
+            height: 100%;
+            width: 100%;
+            & .base_slide {
+              /*height: 75vh;
+              min-height: 75vh;
+              max-height: 75vh;*/
+              height: 80vh;
+              max-height: 80vh;
+              overflow: hidden;
+              display: flex;
+              //align-items: center;
+              //justify-content: center;
+              flex-direction: column;
+              margin: auto;
+              //height: 90%;
+              width: 85%;
+              border: 2px solid rgba(0,0,0,0.1);
+              background: #00a87e;
+              border-radius: 5px;
+
+              & .slide {
+                height: 75vh;
+                display: flex;
+                flex-direction: column;
+              }
+              /*& > div  {
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+              }
+              & img:first-child {
+                transform: rotate(90deg);
+                width: 2vw;
+                align-self: center;
+              }
+              & img:last-child {
+                transform: rotate(-90deg);
+                width: 2vw;
+                align-self: center;
+              }
+              & .show {
+                max-height: calc(80vh - 80px);
+                min-height: calc(80vh - 80px);
+                transition: all .7s ease-in-out;
+                //position: relative;
+              }
+              & .show2 {
+                max-height: calc(80vh - 80px);
+                min-height: calc(80vh - 80px);
+                animation: monanimation 2s ease-in-out;
+                position: relative;
+              }
+
+              & .under {
+                transition: all 1.5s ease-in-out;
+                position: relative;
+                top: 200vh;
+                display: none;
+                //order: 4;
+              }
+
+              & .upper {
+                transition: all 1.5s ease-in-out;
+                position: relative;
+                top: -200vh;
+                order: 3;
+                //display: none;
+              }
+
+              & .upper2 {
+                max-height: calc(80vh - 80px);
+                min-height: calc(80vh - 80px);
+                animation: monanimation2 2s ease-in-out;
+                position: relative;
+                order: 3;
+                //top: -200vh;
+                //display: none;
+              }
+              */
+            }
+            & article {
+              margin: auto;
+              width: 90%;
+              color: white;
+              border: 5px solid;
+              padding: 25px 15px;
+              & h4 {
+                margin: 0;
+                padding-bottom: 25px;
+              }
+              & div {
+                display: flex;
+                & label {
+                  width: 8%;
+                }
+                & label, b {
+                  font-size: 1.3rem;
+                }
+              }
+            }
+          }
+
+        /*& > div {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          margin: 0px 80px 0px 0px;
+          & > div {
+            display: flex;
+            align-items: center;
+            h4 {
+              margin-right: 50px;
+              color: white;
+              max-width: 125px;
+              min-width: 125px;
+            }
+            p {
+              color: white;
+            }
+          }
+        }*/
+      }
+    }
+  }
+  .mail_me {
+    .close-cross {
+      position: absolute;
+      left: 95vw;
+      top: 5vh;
+    }
+
+    article {
+      display: flex;
+      background-color: #00cc99;
+      .image {
+        height: 100vh;
+        background-image: url(../RESSOURCES/Cabane1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 37vw;
+        &_cache {
+          height: 100vh;
+          background-color: black;
+          opacity: 0.2;
+        }
+      }
+      .rubrique {
+        margin-top: 3vh;
+        height: calc(100vh - 3vh);// - margin-top
+        width: 63vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & form {
+          display: flex;
+          flex-direction: column;
+          height: 80vh;
+
+          & label {
+            font-size: 1.75rem;
+            line-height: 2;
+          }
+          & textarea {
+            flex-grow: 1;
+          }
+          & .submit_button {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+  }
+
+  & .skills {
+    .close-cross {
+      position: absolute;
+      left: 95vw;
+      top: 5vh;
+    }
+
+    article {
+      display: flex;
+      background-color: #00cc99;
+      .image {
+        height: 100vh;
+        background-image: url(../RESSOURCES/Cabane1.jpg);
+        background-size: cover;
+        background-position: bottom;
+        width: 37vw;
+        &_cache {
+          height: 100vh;
+          background-color: black;
+          opacity: 0.2;
+        }
+      }
+      .rubrique {
+        margin-top: 3vh;
+        height: calc(100vh - 3vh);// - margin-top
+        width: 63vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+          width: 80%;
+          & > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+        }
+        & .skill
+        {
+          display: flex;
+          flex-direction: column-reverse;
+          margin: 10px 10px;
+          width: calc(50% - 20px);
+          text-align: left;
+        }
+        & .bar {
+          width: 100%;
+          background-color: #ddd;
+          &_c
+          {
+            width: 85%;
+            background-color: #4286f4;
+          }
+          &_cpp
+          {
+            width: 35%;
+            background-color: #f49716;
+          }
+          &_js
+          {
+            width: 40%;
+            background-color: #f49716;
+          }
+          &_html
+          {
+            width: 95%;
+            background-color: #4286f4;
+          }
+          &_css
+          {
+            width: 85%;
+            background-color: #4286f4;
+          }
+          &_wp
+          {
+            width: 60%;
+            background-color: #4286f4;
+          }
+          &_react
+          {
+            width: 20%;
+            background-color: #f49716;
+          }
+        }
+
+      }
+    }
+  }
+}
